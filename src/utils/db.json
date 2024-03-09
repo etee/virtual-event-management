@@ -1,0 +1,18 @@
+[
+  {
+    "fullName": "Etee Kushwaha",
+    "email": "eteekushwaha@gmail.com",
+    "password": "$2b$08$sTlWN2TTH2e7vUM/MrLayuEu5yh7RdY6A094CePZ4twkj7zzsd8k2",
+    "phoneNumber": "+918478765675",
+    "id": 1,
+    "role": "regular"
+  },
+  {
+    "fullName": "Ritesh Sharma",
+    "email": "ritessharma@gmail.com",
+    "password": "$2b$08$NPu6IQTtRXCLgBe7BTq/XuGyB3XRqbh1lz9DHWlAJxJA8I3EjweDW",
+    "phoneNumber": "+918765453434",
+    "id": "26kifpu4ltisd28q",
+    "role": "regular"
+  }
+]
