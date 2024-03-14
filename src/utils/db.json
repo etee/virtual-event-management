@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "fullName": "Etee Kushwaha",
+      "email": "eteekushwaha@gmail.com",
+      "password": "$2b$08$sTlWN2TTH2e7vUM/MrLayuEu5yh7RdY6A094CePZ4twkj7zzsd8k2",
+      "phoneNumber": "+918478765675",
+      "id": 1,
+      "role": "regular"
+    },
+    {
+      "fullName": "Ritesh Sharma",
+      "email": "ritessharma@gmail.com",
+      "password": "$2b$08$NPu6IQTtRXCLgBe7BTq/XuGyB3XRqbh1lz9DHWlAJxJA8I3EjweDW",
+      "phoneNumber": "+918765453434",
+      "id": "26kifpu4ltisd28q",
+      "role": "regular"
+    },
+    {
+      "fullName": "Dhaval Trivedi",
+      "email": "dhaval_t@gmail.com",
+      "password": "$2b$08$V7G/LQLh2DM0HuLoMAoD6OmKuOO2KQpT/1H7nqDiuGJ7oIZakh0bK",
+      "phoneNumber": "+918789787677",
+      "role": "organizer",
+      "id": "26kift6ultppqnh4"
+    }
+  ],
+  "events": [
+    {
+      "name": "Backend Development using Angular",
+      "category": "development",
+      "description": "This course will help you to learn the concepts of ExpressJS framework with practical implementation.",
+      "dateTime": "2024-04-16 10:00",
+      "duration": "2:00",
+      "link": "http://www.google.com",
+      "capacity": 100,
+      "imageUrl": "http://www.google.com",
+      "id": "26kiftqbltpptucw",
+      "participants": [
+        {
+          "id": "26kift6ultppqnh4",
+          "email": "dhaval_t@gmail.com",
+          "fullName": "Dhaval Trivedi"
+        },
+        {
+          "id": 1,
+          "email": "eteekushwaha@gmail.com",
+          "fullName": "Etee Kushwaha"
+        }
+      ]
+    }
+  ]
+}
