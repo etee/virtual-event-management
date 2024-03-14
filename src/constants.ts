@@ -18,6 +18,10 @@ export const HTTP_CODES = {
   GATEWAY_TIMEOUT: 504,
 };
 
+export const USER_ROLE_ORGANIZER = 'organizer';
+export const USER_ROLE_MODERATOR = 'moderator';
+export const USER_ROLE_SPEAKER = 'speaker';
+
 //Error messages
 export const ERR_MALFORMED_REQUEST = "Bad request";
 export const ERR_EXISTING_USER =
@@ -29,7 +33,21 @@ export const ERR_INVALID_PASSWORD = "Invalid password!";
 export const ERR_MISSING_AUTH_HEADER = "Authorization header not found";
 export const ERR_TOKEN_VERIFICATION =
   "Authorization header verification failed";
+export const ERR_EVENT_NOT_FOUND = "Event not found";
+export const ERR_UNAUTHORIZED_EVENT_CREATION =
+  "You are not authorized to create an event";
+export const ERR_UNAUTHORIZED_EVENT_UPDATE =
+  "You are not authorized to update an event";
+export const ERR_EVENT_STARTED = "You can not register for this event, as it has already started";
+export const ERR_USER_ALREADY_REGISTERED_FOR_EVENT = "You are already registered for this event";
+export const ERR_EVENT_CAPACITY_FULL = "Sorry for inconvenience, maximum capacity of the event is reached.";
+export const ERR_UNAUTHORIZED_EVENT_DELETE = "You are not authorized to delete this event";
 
 //Success messages
 export const SUCCESSFUL_REGISTRATION = "User created successfully!";
 export const SUCCESSFUL_LOGIN = "User logged in successfully!";
+export const SUCCESSFUL_EVENT_CREATION = "Event created successfully!";
+export const SUCCESSFUL_EVENT_RETRIEVAL = "Events retrieved successfully!";
+export const SUCCESSFUL_EVENT_UPDATE = "Event updated successfully!";
+export const SUCCESSFUL_EVENT_REGISTRATION = "Registered for event successfully!";
+export const SUCCESSFUL_EVENT_DELETE = "Event deleted successfully!";

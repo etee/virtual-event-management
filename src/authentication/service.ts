@@ -15,10 +15,10 @@ import { JWT_SECRET } from "../config/env.config";
 import uniqid from "uniqid";
 
 const registerUser = async (registrationDetails: any) => {
-  const users = await readFromDatabase();
+  const dataFromDB = await readFromDatabase();
   let existingUser = false;
-  if (users.length > 0) {
-    existingUser = users.find(
+  if (dataFromDB?.users?.length > 0) {
+    existingUser = dataFromDB.users.find(
       (user: User) => user.email === registrationDetails.email
     );
   }
@@ -33,8 +33,8 @@ const registerUser = async (registrationDetails: any) => {
       newUser.role = "regular";
     }
     try {
-      users.push(newUser);
-      await writeToDatabase(users);
+      dataFromDB.users.push(newUser);
+      await writeToDatabase(dataFromDB);
       return {
         status: HTTP_CODES.CREATED,
         message: SUCCESSFUL_REGISTRATION,
@@ -54,10 +54,10 @@ const registerUser = async (registrationDetails: any) => {
 };
 
 const loginUser = async (loginDetails: any) => {
-  const users = await readFromDatabase();
+  const dataFromDB = await readFromDatabase();
   let registeredUser = {} as User;
-  if (users.length > 0) {
-    registeredUser = users.find(
+  if (dataFromDB?.users?.length > 0) {
+    registeredUser = dataFromDB.users.find(
       (user: User) => user.email === loginDetails.email
     );
   }
